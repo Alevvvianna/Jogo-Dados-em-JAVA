@@ -1,0 +1,29 @@
+package curso.java;
+import java.util.Scanner;
+
+public class Projeto {
+
+	public static void main(String[] args) {
+		JogoDeDado jd = new JogoDeDado();
+		Scanner entrada = new Scanner(System.in);
+		String opcao;
+		
+		while(true) {
+			System.out.println("Aperte 1 para Iniciar:\n"
+					+ "Para ganhar a soma dos dados tem que dar 7, Boa Sorte!\n"
+					);
+			opcao = entrada.next();
+			
+			switch(opcao) {
+				case "1":
+					jd.jogar();
+					break;
+				default:
+					System.out.println("Opção incorreta!");
+					break;
+			}
+		}
+			
+	}
+
+}
